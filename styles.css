@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  cursor: url('./icons8-cursor-24\ \(1\).png'), default;
+}
+.container {
+  max-width: 1110px;
+  display: flex;
+  flex-direction: row;
+}
+#board {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 600px;
+  margin-right: 1rem;
+}
+.color {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  border-radius: 50%;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  cursor: url('icons8-cursor-24.png'),  default;
+}
+.color:last-child {
+  margin-right: 0;
+}
+.color:hover {
+  opacity: 0.7;
+}
+.title {
+  text-align: center;
+  width: 100%;
+  color:#fff;
+}
+.actions {
+  display: flex;
+  flex-direction: row;
+  margin-right: 1rem;
+  justify-content: end;
+}
+.action {
+  min-width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #1d1d1d;
+}
+#clear-board {
+  cursor: url('./icons8-cursor-24\ \(2\).png'), default;
+}
+.square {
+  width: 1rem;
+  height: 1rem;
+  background-color: #1d1d1d;
+  box-shadow:  0 0 2px #000;
+  transition: all 0.5s ease;
+}
